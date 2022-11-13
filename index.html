@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basketball scoreboard</title>
+        <meta name="description" content="Keep score!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="scoreboard">
+            <div class="container">
+                <div class="vertical-container">
+                    <h3>HOME</h3>
+                    <h1 id="home-score" class="scorebox">0</h1>
+                    <div>
+                        <button onclick=homePlusOne()>+1</button>
+                        <button onclick=homePlusTwo()>+2</button>
+                        <button onclick=homePlusThree()>+3</button>
+                    </div>
+                    
+                </div>
+                <div class="vertical-container">
+                    <h3>GUEST</h3>
+                    <h1 id="guest-score" class="scorebox">0</h1>
+                    <div>
+                        <button onclick=guestPlusOne()>+1</button>
+                        <button onclick=guestPlusTwo()>+2</button>
+                        <button onclick=guestPlusThree()>+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game-controls">
+            <button id="end-game-btn" class="game-btn" onclick=declareWinner()>End game</button>
+            <button id="new-game-btn" class="game-btn" onclick=reset()>New game</button>
+        </div>
+        <h1 id="winner-txt"></h1>
+        <script src="index.js"></script>
+    </body>
+</html>

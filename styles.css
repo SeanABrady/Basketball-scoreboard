@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'DIGITALDREAMFAT';
+    src: url('DIGITALDREAMFAT.ttf') format('truetype');
+  }
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    background-image: url(images/basketball.jpg);
+    background-size: cover;
+
+}
+
+h3, h1 {
+    margin: 0px;
+}
+
+.scoreboard {
+    width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 385px;
+    background: #1B244A;
+    border-radius: 15px;
+}
+
+.vertical-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 385px;
+    background: #1B244A;
+}
+
+.scorebox {
+    font-family: DIGITALDREAMFAT;
+    width: 155px;
+    height: 120px;
+    margin: none;
+    background: black;
+    color: #F94F6D;
+    line-height: 120px;
+    border-radius: 5px;
+}
+
+button {
+    font-family: DIGITALDREAMFAT;
+    width: 30px;
+    height: 25.77px;
+    font-size: 10px;
+    line-height:18px;
+    background: #1B244A;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+}
+
+.game-btn {
+    margin-top: 50px;
+    width: auto;
+    height:auto;
+    padding: 10px 30px;
+    font-family: 'Verdana';
+    color:white;
+    border: 2px solid white;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+}
+
+#end-game-btn {
+    margin-right: 50px;
+    background-color: #4B1B24;
+}
+
+#new-game-btn {
+    background-color: #244B1B;
+}
+
+#winner-txt {
+    text-align: center;
+    margin-top:50px;
+    text-shadow: 0px 0px 5px black;
+}
